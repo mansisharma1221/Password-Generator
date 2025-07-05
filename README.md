@@ -20,3 +20,5 @@ A simple and customizable password generator built using HTML, CSS, and JavaScri
 - CSS
 - JavaScript
 - GitHub Pages for deployment
+
+🙌 Made with ❤️ by Mansi Sharma
