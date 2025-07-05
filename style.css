@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #fff;
+  font-family: "Courier New", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #111;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 30px limegreen;
+  width: 90%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.heading-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Password Display Box */
+.password-display {
+  display: flex;
+  align-items: center;
+  border: 1px solid #444;
+  padding: 10px;
+  border-radius: 6px;
+  background: #1c1c1c;
+  gap: 10px;
+}
+
+.password-display input {
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 14px;
+  flex: 1;
+  font-family: monospace;
+  text-align: left;
+}
+
+.password-display button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.password-display button img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Customize Box */
+.customize-box {
+  border: 1px solid #555;
+  padding: 15px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.left-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.left-options label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.right-slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.range-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-right: 40px;
+}
+
+.length-number {
+  background: #222;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: white;
+}
+
+input[type="range"] {
+  accent-color: limegreen;
+}
+
+/* Generate Button */
+#generateBtn {
+  background: limegreen;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#generateBtn:hover {
+  background: #00ff00;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+/* Switch Toggle - Final Design */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: black; /* Always black */
+  border-radius: 34px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px 12px;
+  background-image: url("https://img.icons8.com/color/48/ffa500/moon-symbol.png"); /* Orange moon */
+}
+
+input:checked + .slider::before {
+  transform: translateX(20px);
+  background-image: url("https://img.icons8.com/color/48/ffa500/sun--v1.png"); /* Orange sun */
+  background-size: 14px 14px;
+}
+
+/* LIGHT THEME */
+.light-theme {
+  background: #f0f0f0;
+  color: #111;
+}
+
+.light-theme .container {
+  background: #ffffff;
+  color: #111;
+  box-shadow: 0 0 20px #ccc;
+}
+
+.light-theme .password-display {
+  background: #eee;
+  border: 1px solid #ccc;
+}
+
+.light-theme .password-display input {
+  color: #000;
+}
+
+.light-theme #generateBtn {
+  background: #4caf50;
+  color: white;
+}
+
+.light-theme footer {
+  color: #333;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <div class="heading-row">
+      <h3>> Generate a secure password</h3>
+      <label class="switch">
+        <input type="checkbox" id="themeToggleSwitch">
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+    <div class="password-display">
+      <input type="text" id="password" readonly />
+      <button id="copyBtn" title="Copy">
+        <img src="https://img.icons8.com/material-outlined/24/ffffff/copy.png" alt="Copy"/>
+      </button>
+    </div>
+
+    <h3>Customize your password</h3>
+
+    <div class="customize-box">
+      <div class="left-options">
+        <label><input type="checkbox" id="uppercase" checked> Uppercase</label>
+        <label><input type="checkbox" id="lowercase" checked> Lowercase</label>
+        <label><input type="checkbox" id="numbers" checked> Numeric</label>
+        <label><input type="checkbox" id="symbols" checked> Symbols</label>
+      </div>
+
+      <div class="right-slider">
+        <label>Password Length:</label>
+        <div class="range-box">
+          <span class="length-number" id="lengthVal">20</span>
+          <input type="range" id="length" min="4" max="32" value="20" />
+        </div>
+      </div>
+    </div>
+
+    <button id="generateBtn">Generate</button>
+
+    <footer>Made with ❤️ by <span style="color: limegreen;">Mansi Sharma</span></footer>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
